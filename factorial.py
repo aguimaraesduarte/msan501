@@ -8,3 +8,5 @@ def factorial(n):
 	return n*factorial(n-1)
 
 print factorial(int(sys.argv[1]))
+
+#number of bits required to store a number: log(n)
