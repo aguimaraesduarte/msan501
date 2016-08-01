@@ -1,9 +1,3 @@
-'''
-sqrt(n)
-
-x_0 = 1
-x_{i+1} =0.5 * (x_i + n/x_i)
-'''
 import sys
 import numpy as np
 
