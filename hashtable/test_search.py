@@ -3,7 +3,7 @@ from linsearch import linear_search
 from myhtable_search import myhtable_index_search, myhtable_create_index
 from words import filelist, words, filenames
 
-rootdir = "/Users/parrt/github/msan501/data/berlitz1"
+rootdir = "/home/andre/Documents/msan501/hashtable/data/berlitz1"
 
 
 def test_linear_berlitz_none():
