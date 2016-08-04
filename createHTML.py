@@ -16,6 +16,9 @@ template = """
 	</body>
 </html>
 """
+result_template = """
+<a href="%s">"%s"</a>
+"""
 
 html = template % ("term1 term2", 45, "term1 term2", 45)
 
