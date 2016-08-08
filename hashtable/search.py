@@ -6,17 +6,25 @@ import sys
 import webbrowser
 
 from index_search import index_search, create_index
-from linsearch import linear_search
+from linear_search import linear_search
 from myhtable_search import myhtable_index_search, myhtable_create_index
 from words import filelist, words, results
 
 """
 Usage:
 
-$ python search.py linear data/slate
-$ python search.py index data/slate
-$ python search.py myhtable data/slate
+$ python search.py linear /Users/USERID/msan501/data/slate
+$ python search.py index /Users/USERID/msan501/data/slate
+$ python search.py myhtable /Users/USERID/msan501/data/slate
 """
+
+impl = sys.argv[1]
+rootdir = sys.argv[2]
+files = filelist(rootdir)
+# Uncomment the next line to test just the first 100 files instead of all files
+#files = files[:10]
+N = len(files)
+print N, "files"
 
 index = None
 

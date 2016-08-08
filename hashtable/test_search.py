@@ -1,9 +1,9 @@
 from index_search import index_search, create_index
-from linsearch import linear_search
+from linear_search import linear_search
 from myhtable_search import myhtable_index_search, myhtable_create_index
 from words import filelist, words, filenames
 
-rootdir = "/home/andre/Documents/msan501/hashtable/data/berlitz1"
+rootdir = "/home/andre/Documents/msan501/hashtable/data/berlitz1/"
 
 
 def test_linear_berlitz_none():
@@ -82,4 +82,9 @@ def test_myhtable_berlitz():
     expected = ['HistoryHawaii.txt']
     assert filenames(myhtable_docs) == expected
 
+test_linear_berlitz_none()
 test_linear_berlitz()
+test_index_berlitz_none()
+test_index_berlitz()
+test_myhtable_berlitz_none()
+test_myhtable_berlitz()

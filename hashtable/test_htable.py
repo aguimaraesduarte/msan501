@@ -50,3 +50,18 @@ def test_str_to_set():
 0003->parrt:set([2, 99, 3942])
 0004->
 """
+
+test_empty()
+test_single()
+test_a_few()
+test_str_to_set()
+
+table = htable(5)
+htable_put(table, "parrt", 99)
+htable_put(table, "james", 2)
+htable_put(table, "andre", 1)
+print table
+print bucket_indexof(table, "parrt")
+print bucket_indexof(table, "james")
+print bucket_indexof(table, "bob")
+print htable_get(table, "parrt")
